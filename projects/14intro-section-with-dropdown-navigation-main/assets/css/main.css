@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Almost-White);
+}
+
+.header-container {
+    height: 80px;
+    background-color: var(--Almost-White);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.left-contain-header {
+    width: 48%;
+    /* background-color: rgba(0, 0, 255, 0.292); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.right-contain-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: 20%;
+}
+
+.nav-container {
+    /* background-color: brown; */
+    width: 60%;
+}
+
+.ul-container {
+    /* background-color: rgba(255, 0, 0, 0.226); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+}
+
+.ul-container li{
+    list-style: none;
+    /* background-color: aqua; */
+    cursor: pointer;
+}
+
+.ul-container li a {
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--Medium-Gray);
+}
+
+.ul-container .li-icon-after .a-icon-after::after {
+    width: 10px;
+    height: 10px;
+    background-image: url('../images/icon-arrow-down.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    content: '';
+    position: absolute;
+    right: -14px;
+}
+
+.dropdown {
+  display: none;
+}
